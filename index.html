@@ -14,6 +14,13 @@
 				el.innerHTML = '&#10073;&#10073;'
 			}
 		}
+		var mainsong = 'stuff/thugstory.mp3'
+		var specials = ['stuff/allday.wav', 'stuff/sparks.mp3', 'stuff/space.mp3', 'stuff/places.mp3']
+		if(Math.random() < 0.25){
+			var songselection = specials[Math.floor(Math.random()*specials.length)];
+		} else {
+			var songselection = mainsong;
+		}
 		</script>
 	</head>
 	<body>
@@ -24,8 +31,10 @@
 		</br>
 		
 		<audio autoplay loop id = "song">
-			<source src="stuff/thugstory.mp3" type = "audio/mpeg">
+			<source src= '' type = "audio/mpeg">
 		</audio>
+		<script> song.src = songselection; song.play()
+		</script>
 		<button class = "btn" type="button" onclick ="toggle(this)">&#10073;&#10073;</button>
 	</body>
 </html>
