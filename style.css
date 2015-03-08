@@ -1,10 +1,27 @@
 body{
+	text-align: center;
 	background-color: rgb(210,210,200);
 }
 
 IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	margin-top: 50px;
+	margin-top: 40px;
 	}
+
+
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: #747678;
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #474e52;
+  text-decoration: none;
+}

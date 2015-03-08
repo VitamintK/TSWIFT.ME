@@ -3,10 +3,31 @@
 	<head>
 		<title> T.S. </title>
 				<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<script>
+		function toggle(el){
+			if(!song.paused){
+				song.pause();
+				el.innerHTML = '&#9658;'
+			}else{
+				console.log('hi')
+				song.play();
+				el.innerHTML = '&#10073;&#10073;'
+			}
+		}
+		</script>
 	</head>
 	<body>
+		<div>
 		<a href = "https://www.facebook.com/groups/545683145532131/">
 		<img class = "displayed" src="stuff/smile.png" alt="t.s.">
-		</a>
+		</a> </div>
+		</br>
+		
+		<audio autoplay id = "song">
+		<source src="stuff/thugstory.mp3" type = "audio/mpeg">
+		</audio>
+		<button class = "btn" type="button" onclick ="toggle(this)">
+		&#10073;&#10073;
+		</button>
 	</body>
 </html>
