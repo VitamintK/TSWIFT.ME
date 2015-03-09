@@ -17,7 +17,7 @@ var probability = 0.3;
 var secondPlaythrough = false;
 
 function randpic(){
-	if(Math.random() < 0.25 || secondPlaythrough == true){
+	if(Math.random() < 0.5){
 		pic = 'pol/' + (Math.floor(Math.random() * 60)).toString()
 	}
 }
