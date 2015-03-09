@@ -11,8 +11,20 @@ function toggle(el){
 var mainsong = 'stuff/thugstory.mp3'
 var specials = ['stuff/allday.wav', 'stuff/sparks.mp3', 'stuff/space.mp3', 'stuff/places.mp3']
 var songselection;
-if(Math.random() < 0.3){
-	songselection = specials[Math.floor(Math.random()*specials.length)];
-} else {
-	songselection = mainsong;
+var probability = 0.35
+var secondPlaythrough = false;
+function pickSong(){
+	if(Math.random() < probability || secondPlaythrough == true){
+		songselection = specials[Math.floor(Math.random()*specials.length)];
+	} else {
+		songselection = mainsong;
+	}
 }
+pickSong();
+secondPlaythrough = true;
+
+window.onload = function(){song.addEventListener("ended", function(){
+	pickSong();
+	song.src = songselection;
+	secondPlaythrough = false;
+})}
