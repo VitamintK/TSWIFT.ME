@@ -33,6 +33,13 @@ function pickSong(){
 	} else {
 		songselection = mainsong;
 	}
+	if(songselection == 'stuff/allday.wav'){
+		//alert('allday');
+		document.body.style.backgroundImage = "url('stuff/allday.gif')";
+		alert('allday');
+	} else {
+		document.body.style.background= "rgb(210,210,200)";
+	}
 }
 pickSong();
 secondPlaythrough = true;
