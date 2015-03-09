@@ -5,7 +5,13 @@ body{
 
 IMG.displayed {
 	margin-top: 40px;
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
 	}
+
+IMG.displayed:hover{
+	opacity: 0.8;
+}
 
 
 

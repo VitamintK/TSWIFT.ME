@@ -11,7 +11,7 @@ function toggle(el){
 var mainsong = 'stuff/thugstory.mp3'
 var specials = ['stuff/allday.wav', 'stuff/sparks.mp3', 'stuff/space.mp3', 'stuff/places.mp3']
 var songselection;
-var probability = 0.35
+var probability = 0.32
 var secondPlaythrough = false;
 function pickSong(){
 	if(Math.random() < probability || secondPlaythrough == true){
