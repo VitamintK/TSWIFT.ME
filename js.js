@@ -50,4 +50,5 @@ window.onload = function(){
 		secondPlaythrough = false;
 		setrandpic();
 	});
+	song.play();
 }
