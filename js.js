@@ -51,7 +51,7 @@ window.onload = function(){
 		setrandpic();
 	});
 	if(song.paused == true){
-		alert('yo');
-		//el.innerHTML = '&#10073;&#10073;'
+		//alert('yo');
+		document.getElementById('thebtn').innerHTML = '&#9658;';
 	}
 }
