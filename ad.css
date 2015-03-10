@@ -1,0 +1,38 @@
+body{
+	text-align: center;
+	background-color: rgb(210,210,200);
+}
+
+IMG.displayed {
+
+	margin-top: 30px;
+	opacity: 0.8;
+	transition: opacity 0.2s ease-in-out;
+  transition: width 0.1s linear;
+	}
+
+IMG.displayed:active{
+	opacity: 1;
+  width: 520px
+}
+
+
+
+.btn {
+  height: 2.5em; 
+  width: 2.5em;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1em;
+  background: #747678;
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #474e52;
+  text-decoration: none;
+}
