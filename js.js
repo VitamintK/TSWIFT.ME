@@ -50,4 +50,8 @@ window.onload = function(){
 		secondPlaythrough = false;
 		setrandpic();
 	});
+	if(song.paused == true){
+		alert('yo');
+		//el.innerHTML = '&#10073;&#10073;'
+	}
 }
