@@ -51,7 +51,7 @@ window.onload = function(){
 		setrandpic();
 	});
 	if(song.paused == true){
-		//alert('yo');
+		//this is for iOS safari and android Chrome because they can't autoplay audio.
 		document.getElementById('thebtn').innerHTML = '&#9658;';
 	}
 }

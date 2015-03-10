@@ -16,12 +16,14 @@ IMG.displayed:hover{
 
 
 .btn {
+  height: 2.5em; 
+  width: 2.5em;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 1em;
   background: #747678;
   padding: 6px 6px 6px 6px;
   text-decoration: none;
