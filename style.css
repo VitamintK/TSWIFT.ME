@@ -33,3 +33,10 @@ IMG.displayed:hover{
   background: #474e52;
   text-decoration: none;
 }
+
+#rjust{
+	text-align: right;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.4em;
+	color: white;
+}
